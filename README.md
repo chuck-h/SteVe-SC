@@ -2,7 +2,7 @@
 This fork of SteVe is for exploring Smart Charging features.
 The LoadManager module communicates with SteVe to coordinate multiple charge points sharing an electrical distribution network.
 
-![SteVe](steve @ 12ba678/src/main/resources/webapp/static/images/logo.png) 
+![SteVe](12ba678d60ad63905793e3a164272b7ce6d77674/src/main/resources/webapp/static/images/logo.png) 
 
 
 # Introduction
