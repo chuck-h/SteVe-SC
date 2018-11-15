@@ -12,5 +12,6 @@
 
     <modules>
         <module>steve</module>
+        <module>LoadManager</module>
     </modules>
 </project>
