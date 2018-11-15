@@ -374,7 +374,7 @@
                         </generate>
 
                         <target>
-                            <packageName>jooq.steve.db</packageName>
+                            <packageName>jooq.LoadManager.db</packageName>
                             <directory>${project.build.directory}/generated-sources</directory>
                         </target>
                     </generator>
