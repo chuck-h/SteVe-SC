@@ -2,10 +2,7 @@
 This fork of SteVe is for exploring Smart Charging features.
 The LoadManager module communicates with SteVe to coordinate multiple charge points sharing an electrical distribution network.
 
-![SteVe](steve/src/main/resources/webapp/static/images/logo.png) 
-
-[![Build Status](https://travis-ci.org/RWTH-i5-IDSG/steve.svg)](https://travis-ci.org/RWTH-i5-IDSG/steve)
-[![Coverity Status](https://scan.coverity.com/projects/6601/badge.svg)](https://scan.coverity.com/projects/rwth-i5-idsg-steve)
+![SteVe](steve @ 12ba678/src/main/resources/webapp/static/images/logo.png) 
 
 
 # Introduction
