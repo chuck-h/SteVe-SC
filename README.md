@@ -1,65 +1,28 @@
-### Fork notes
-This fork of SteVe is for exploring Smart Charging features.
-The LoadManager module communicates with SteVe to coordinate multiple charge points sharing an electrical distribution network.
+# SteVe-SC
+This project targets an Electric Vehicle "Load Management" use case for OCPP1.6 charging equipment. It combines a LoadManagement module (responsible for setting charge current limits on the connected vehicles) with SteVe, which is a Central System software module for OCPP EV charging. This project is explained further on the [wiki](https://github.com/chuck-h/SteVe-SC/wiki)
 
-![SteVe](12ba678d60ad63905793e3a164272b7ce6d77674/src/main/resources/webapp/static/images/logo.png) 
+SteVe is developed and maintained by [RWTH-Aachen University](https://github.com/RWTH-i5-IDSG). More information on this module may be found in the steve subdirectory.
 
-
-# Introduction
-
-SteVe was developed at the RWTH Aachen University and means Steckdosenverwaltung, namely socket administration in German. The aim of SteVe is to support the deployment and popularity of electric mobility, so it is easy to install and to use. SteVe provides basic functions for the administration of charge points, user data, and RFID cards for user authentication and was tested successfully in operation.
-
-SteVe is considered as an open platform to implement, test and evaluate novel ideas for electric mobility, like authentication protocols, reservation mechanisms for charge points, and business models for electric mobility. SteVe is distributed under [GPL](LICENSE.txt) and is free to use. If you are going to deploy SteVe we are happy to see the [logo](website/logo/managed-by-steve.pdf) on a charge point.
-
-### Charge Point Support
-
-Electric charge points using the following OCPP versions are supported:
-
-* OCPP1.2S
-* OCPP1.2J
-* OCPP1.5S
-* OCPP1.5J
-* OCPP1.6S
-* OCPP1.6J
-
-For Charging Station compatibility please check:
-https://github.com/RWTH-i5-IDSG/steve/wiki/Charging-Station-Compatibility 
-The list was just recently started and is therefore not exhaustive.
+## Text below is placeholder copied from SteVe, to be replaced
 
 ### System Requirements
 
-SteVe requires 
+SteVe-SC requires 
 * JDK 11 (both Oracle JDK and OpenJDK are supported)
 * Maven 
 * At least MySQL 5.6.4 (MariaDB 10.0 or later works as well) as database
 
 to build and run. 
 
-SteVe is designed to run standalone, a java servlet container / web server (e.g. Apache Tomcat), is **not** required.
+SteVe-SC is designed to run standalone, a java servlet container / web server (e.g. Apache Tomcat), is **not** required.
 
 # Configuration and Installation
 
 1. Database preparation:
 
-    Make sure MySQL is reachable via TCP (e.g., remove `skip-networking` from `my.cnf`).
-    The following MySQL statements can be used as database initialization (adjust database name and credentials according to your setup):
-
-    ```
-    CREATE DATABASE stevedb CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-    GRANT ALL PRIVILEGES ON stevedb.* TO 'steve'@'localhost' IDENTIFIED BY 'changeme';
-    GRANT SELECT ON mysql.proc TO 'steve'@'localhost' IDENTIFIED BY 'changeme';
-    ```
-    
-    **Important**: Make sure that the time zone of the MySQL server is the same as [the time zone of SteVe](src/main/java/de/rwth/idsg/steve/SteveConfiguration.java#L28). Since `UTC` is strongly recommended by OCPP, it is the default in SteVe and you should set it in MySQL, accordingly.
 
 2. Download and extract tarball:
 
-    You can download and extract the SteVe releases using the following commands (replace X.X.X with the desired version number):
-    ```
-    wget https://github.com/RWTH-i5-IDSG/steve/archive/steve-X.X.X.tar.gz
-    tar xzvf steve-X.X.X.tar.gz
-    cd steve-X.X.X
-    ```
 
 3. Configure SteVe **before** building:
 
