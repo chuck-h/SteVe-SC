@@ -37,7 +37,7 @@ public class InputController {
     public String getInput(@RequestParam(value="node") String node,
                                @RequestParam(value="time", required=false) Long time,
                                @RequestParam(value="fulljson", required=false) String json) {
-        Map<String, Float> valuesMap;
+        Map<String, Float> valuesMap = new TreeMap<String, Float>();
         if (json != null) {
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
