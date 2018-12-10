@@ -3,6 +3,8 @@ This project targets an Electric Vehicle "Load Management" use case for [OCPP1.6
 
 [SteVe](https://github.com/RWTH-i5-IDSG/steve/blob/master/README.md) is developed and maintained by [RWTH-Aachen University](https://github.com/RWTH-i5-IDSG). More information on the SteVe module may be found in the steve subdirectory.
 
+The LoadManagement module is independently developed by chuck-h and is motivated by serving a small residential multi-charger installation in Seattle, WA, USA.
+
 ### Text below is placeholder to be replaced
 
 ### System Requirements
